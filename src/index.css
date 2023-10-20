@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&display=swap");
 
 body {
   margin: 0;
@@ -44,13 +44,103 @@ body {
 }
 
 .btn {
-  margin-top: 25px;
+  margin-top: 5px;
   height: 50px;
   width: 50%;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 100;
   border-radius: 20px;
   border-style: none;
   background-color: #172554;
   color: white;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #60a5fa;
+  color: #172554;
+}
+
+.about-nav {
+  background-color: #212121;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 200;
+  justify-content: end;
+  color: white;
+}
+.nav {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.about {
+  height: 100vh;
+  background-color: #0f172a;
+}
+
+.link-to {
+  width: 100%;
+}
+.headshot {
+  width: 15vw;
+  height: 15vw;
+  display: flex;
+  border-radius: 50%;
+  padding: 100px 100px 0px 100px;
+}
+.headshot-img {
+  border-radius: 50%;
+}
+.about-intro {
+  height: 30vh;
+  color: white;
+  padding-top: 100px;
+  padding-right: 100px;
+}
+.intro-text {
+  font-size: 25px;
+}
+.top-half {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-half {
+  color: white;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+i {
+  font-size: 50px;
+}
+.techs {
+  display: flex;
+  gap: 30px;
+}
+
+.tech-cards {
+  font-weight: 200;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.card-body {
+  display: flex;
+  gap: 20px;
+}
+.card-head {
+  display: flex;
+  align-items: center;
 }
