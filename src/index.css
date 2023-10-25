@@ -72,6 +72,8 @@ body {
   font-weight: 200;
   justify-content: end;
   color: white;
+  position: sticky;
+  top: 0;
 }
 .nav {
   padding-left: 10px;
@@ -143,4 +145,9 @@ i {
 .card-head {
   display: flex;
   align-items: center;
+}
+
+.portfolio {
+  height: 100vh;
+  background-color: #0f172a;
 }
