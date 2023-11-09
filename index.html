@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./dist/main.js" defer></script>
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <section class="homepage">
+        <div class="home">
+          <div class="title-btn">
+            <h1 class="title">hi, i'm <span class="name">ben</span></h1>
+            <h1 class="position">web developer and UX designer</h1>
+            <a href="#portfolio-page" class="link-to"
+              ><button class="btn">view my work</button></a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="about-page">
+        <div class="about">
+          <div class="about-nav">
+            <div class="nav home-nav">home</div>
+            <div class="nav about-nav">about</div>
+            <div class="nav portfolio-nav">
+              <a class="link-to" href="#portfolio-page">portfolio</a>
+            </div>
+            <div class="nav contact-nav">contact</div>
+          </div>
+          <div class="about-content">
+            <div class="top-half">
+              <div class="headshot">
+                <img class="headshot-img" src="/src/headshot.jpeg" alt="" />
+              </div>
+              <div class="about-intro">
+                <p class="intro-text">
+                  Hello! I am a digital media student at Davidson Davie
+                  Community College currently getting my associates, apart from
+                  that I am teaching myself the ins and outs of
+                  <span class="name">web development</span>
+                  and <span class="name">user experience design.</span> Other
+                  miscellaneous activities include music production,
+                  horticulture and film making.
+                </p>
+              </div>
+            </div>
+            <div class="bottom-half">
+              <h1>My ever growing tech stack:</h1>
+              <div class="tech-cards">
+                <div class="card-head">languages</div>
+                <div class="card-body">
+                  <i id="svgs" class="devicon-javascript-plain colored"></i>
+                  <img
+                    style="height: 50px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  />
+                  <img
+                    style="height: 50px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  />
+                  <img
+                    style="height: 50px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  />
+                </div>
+              </div>
+              <div class="tech-cards">
+                <div class="card-head">frontend</div>
+                <div class="card-body">
+                  <i class="devicon-react-original colored"></i>
+                  <i class="devicon-tailwindcss-plain colored"></i>
+                </div>
+              </div>
+              <div class="tech-cards">
+                <div class="card-head">backend</div>
+                <div class="card-body">
+                  <i class="devicon-nodejs-plain colored"></i
+                  ><img
+                    style="height: 50px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg"
+                  />
+
+                  <i class="devicon-jest-plain"></i>
+
+                  <i class="devicon-django-plain-wordmark"></i>
+
+                  <i class="devicon-flask-original-wordmark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio-page">
+        <div class="portfolio">
+          <div class="portfolio-header">Portfolio</div>
+          <div class="portfolio-list">
+            <div class="portfolio-item">
+              Websites
+              <div class="imgs">
+                <img src="/src/img/weather.png" alt="" srcset="" />
+              </div>
+            </div>
+
+            <div class="portfolio-item">Videography</div>
+            <div class="portfolio-item">
+              Photography
+              <div class="imgs">
+                <img src="/src/img/fleeting.JPG" alt="" srcset="" />
+              </div>
+            </div>
+            <div class="portfolio-item">
+              Art Pieces
+              <div class="pieces">
+                <img src="/src/img/bicylce-driveby.jpg" alt="" srcset="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact"><div class="contact-page">Contact me</div></section>
+    </div>
+  </body>
+</html>
