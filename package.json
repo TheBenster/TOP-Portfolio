@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/TheBenster/TOP-Portfolio"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "dev": "webpack --mode development"
+    "dev": "webpack --mode development",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
