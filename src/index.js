@@ -1,19 +1,35 @@
 import "./index.css";
 
 // Select the section you want to monitor the scroll for.
-const aboutPage = document.getElementById("about-page");
+// Get all the navigation links
+const navLinks = document.querySelectorAll(".link-to");
 
-// Define a function to perform the action.
-function doSomethingOnScroll() {
+// Function to highlight the appropriate navigation link
+function highlightNavLink() {
   const scrollPosition = window.scrollY;
-  const aboutPageTop = aboutPage.getBoundingClientRect().top;
+  console.log("test");
 
-  if (scrollPosition > aboutPageTop) {
-    alert("User has scrolled to the 'about' section");
-  } else {
-    alert("User hasn't scrolled to the 'about' section yet");
-  }
+  // Loop through each section and check if it's in view
+  navLinks.forEach((link) => {
+    const targetId = link.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+      const sectionTop = targetSection.offsetTop;
+      const sectionBottom = sectionTop + targetSection.clientHeight;
+
+      // Highlight the link if the section is in view
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    }
+  });
 }
 
-// Add an event listener to the window for the scroll event.
-window.addEventListener("scroll", doSomethingOnScroll);
+// Add a scroll event listener to highlight the appropriate link
+window.addEventListener("scroll", highlightNavLink);
+
+// Initial call to highlightNavLink to set the initial state
+highlightNavLink();
