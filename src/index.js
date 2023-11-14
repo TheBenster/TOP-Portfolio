@@ -26,3 +26,33 @@ function highlightNavLink() {
 window.addEventListener("scroll", highlightNavLink);
 
 highlightNavLink();
+
+const portfolioItems = document.querySelectorAll(".portfolio-item");
+const modal = document.getElementById("modal");
+const modalImage = document.getElementById("modalImage");
+
+portfolioItems.forEach((item) => {
+  const imgElement = item.querySelector("img");
+  const imageUrl = imgElement.src;
+
+  item.addEventListener("click", () => {
+    openModal(imageUrl);
+  });
+});
+
+function openModal(imageUrl) {
+  console.log("hello");
+  modalImage.src = imageUrl;
+  modal.style.display = "flex";
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+// Close the modal if the user clicks outside of it
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    closeModal();
+  }
+});

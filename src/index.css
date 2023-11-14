@@ -366,3 +366,25 @@ input[type="text"] {
 .active {
   color: #60a5fa;
 }
+.home.photos,
+.home.websites {
+  align-items: start;
+  justify-content: start;
+  padding-top: 20px;
+  padding-left: 50px;
+  flex-direction: column;
+}
+
+.images {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.image-item,
+.image-item > img,
+.image-item > h3,
+.image-item > a > img {
+  width: 25vw;
+  font-weight: 200;
+}
