@@ -172,7 +172,7 @@ i {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   color: white;
-  gap: 100px;
+  gap: 20px;
   padding-top: 20px;
   font-size: 1.5rem;
   font-weight: 200;
@@ -184,42 +184,19 @@ i {
   width: auto;
   flex-direction: column;
   gap: 20px;
-  height: 20%;
   object-fit: contain;
 }
-.portfolio-item img {
-  border-radius: 10px;
-  /* height: 20%; */
-}
-.portfolio-list {
+.portfolio-item a {
+  height: 15vh;
   object-fit: contain;
 }
-
-.imgs img {
-  object-fit: contain;
-  height: auto;
-  width: 100%;
+.port {
+  height: 20vh;
+  border-radius: 12px;
+  width: auto;
 }
-.portfolio-item imgs img {
-  object-fit: contain;
-  height: auto;
-  width: 100%;
-}
-.pieces img {
-  height: 20%;
-}
-imgs > img:hover,
-.pieces > img:hover {
-  height: 27vh;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  transition-timing-function: ease-in-out;
-}
-
-.imgs > img:not(:hover),
-.pieces > img:not(:hover) {
-  transition-duration: 0.4s;
-  transition-timing-function: ease-in-out;
+.port.digital {
+  width: 60%;
 }
 
 .contact-page {
@@ -306,6 +283,9 @@ input[type="text"] {
   .headshot-img {
     width: 1fr;
   }
+  .portfolio-item.digital {
+    display: none;
+  }
 }
 @media screen and (max-width: 650px) {
   /* .about {
@@ -319,7 +299,7 @@ input[type="text"] {
     height: 1000px;
   }
   #portfolio-page {
-    height: 170vh;
+    height: 120vh;
     background-color: #0f172a;
   }
   #misc {
@@ -336,22 +316,7 @@ input[type="text"] {
   .portfolio-item {
     height: 50%;
     padding-bottom: 0;
-  }
-
-  .imgs > img {
-    width: auto;
-    height: 100%;
-  }
-  .imgs {
-    height: 70%;
-    object-fit: contain;
-  }
-  .pieces {
-    height: 70%;
-  }
-  .pieces > img {
-    width: auto;
-    height: 100%;
+    padding-top: 35px;
   }
 }
 .socials-page {
